@@ -18,7 +18,7 @@ import Tooltip from './components/Tooltip';
 
 const App = () => {
   const [showIntro, setShowIntro] = useState(true);
-  const [dataSource, setDataSource] = useState('ft50'); // 'ft50' or 'service'
+  const [dataSource, setDataSource] = useState('service'); // 'ft50' or 'service'
   const [rawData, setRawData] = useState([]);
   const [previousData, setPreviousData] = useState([]);
   const [childRelations, setChildRelations] = useState({});
@@ -554,51 +554,53 @@ const App = () => {
               background: '#1a252f',
               boxShadow: '0 4px 12px rgba(0,0,0,0.3)'
             }}>
-            <button
-              onClick={() => setDataSource('ft50')}
-              style={{
-                padding: '10px 24px',
-                border: 'none',
-                fontSize: '15px',
-                fontWeight: '700',
-                cursor: 'pointer',
-                background: dataSource === 'ft50' ? '#3498db' : '#1a252f',
-                color: 'white',
-                transition: 'all 0.2s ease',
-                borderRight: '2px solid #2c3e50',
-                letterSpacing: '0.5px'
-              }}
-              onMouseEnter={(e) => {
-                if (dataSource !== 'ft50') e.target.style.background = '#2c3e50';
-              }}
-              onMouseLeave={(e) => {
-                if (dataSource !== 'ft50') e.target.style.background = '#1a252f';
-              }}
-            >
-              FT50 Data
-            </button>
-            <button
-              onClick={() => setDataSource('service')}
-              style={{
-                padding: '10px 24px',
-                border: 'none',
-                fontSize: '15px',
-                fontWeight: '700',
-                cursor: 'pointer',
-                background: dataSource === 'service' ? '#e74c3c' : '#1a252f',
-                color: 'white',
-                transition: 'all 0.2s ease',
-                letterSpacing: '0.5px'
-              }}
-              onMouseEnter={(e) => {
-                if (dataSource !== 'service') e.target.style.background = '#2c3e50';
-              }}
-              onMouseLeave={(e) => {
-                if (dataSource !== 'service') e.target.style.background = '#1a252f';
-              }}
-            >
-              Service Data
-            </button>
+              {/* Service Data 버튼을 먼저 (왼쪽) */}
+              <button
+                onClick={() => setDataSource('service')}
+                style={{
+                  padding: '10px 24px',
+                  border: 'none',
+                  fontSize: '15px',
+                  fontWeight: '700',
+                  cursor: 'pointer',
+                  background: dataSource === 'service' ? '#e74c3c' : '#1a252f',
+                  color: 'white',
+                  transition: 'all 0.2s ease',
+                  borderRight: '2px solid #2c3e50',
+                  letterSpacing: '0.5px'
+                }}
+                onMouseEnter={(e) => {
+                  if (dataSource !== 'service') e.target.style.background = '#2c3e50';
+                }}
+                onMouseLeave={(e) => {
+                  if (dataSource !== 'service') e.target.style.background = '#1a252f';
+                }}
+              >
+                Service Data
+              </button>
+              {/* FT50 Data 버튼을 나중에 (오른쪽) */}
+              <button
+                onClick={() => setDataSource('ft50')}
+                style={{
+                  padding: '10px 24px',
+                  border: 'none',
+                  fontSize: '15px',
+                  fontWeight: '700',
+                  cursor: 'pointer',
+                  background: dataSource === 'ft50' ? '#3498db' : '#1a252f',
+                  color: 'white',
+                  transition: 'all 0.2s ease',
+                  letterSpacing: '0.5px'
+                }}
+                onMouseEnter={(e) => {
+                  if (dataSource !== 'ft50') e.target.style.background = '#2c3e50';
+                }}
+                onMouseLeave={(e) => {
+                  if (dataSource !== 'ft50') e.target.style.background = '#1a252f';
+                }}
+              >
+                FT50 Data
+              </button>
             </div>
             <div style={{ marginLeft: '-2px' }}>
               <Tooltip 

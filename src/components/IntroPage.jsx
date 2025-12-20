@@ -124,7 +124,7 @@ const IntroPage = ({ onEnter }) => {
               textAlign: 'left',
               animation: 'fadeInUp 0.6s ease-out'
             }}>
-              Service Research Compass
+              Service Research Compass 2030
             </h1>
             
             {/* Subtitle */}
@@ -165,7 +165,7 @@ const IntroPage = ({ onEnter }) => {
               lineHeight: '1.6',
               marginBottom: '10px'
             }}>
-            Which research topics will converge in service science by 2027? 
+            Which research topics will converge in service science by 2030? 
             This platform answers that question by analyzing co-occurrence patterns from leading service research journals.
             Our link prediction model identifies concept pairs that don't yet appear together—but are likely to emerge as important research themes.
             </p>
@@ -253,7 +253,7 @@ const IntroPage = ({ onEnter }) => {
                   lineHeight: '1.5',
                   margin: 0 
                 }}>
-                  Compare predicted (2027) vs. current networks side-by-side. 
+                  Compare predicted (2030) vs. current networks side-by-side. 
                   Click nodes or edges to filter and discover specific inter-community connections.
                 </p>
               </div>
@@ -300,7 +300,7 @@ const IntroPage = ({ onEnter }) => {
             flexWrap: 'wrap'
           }}>
             <a
-              href="/Service_Research_Compass_2027_User_Guide.pdf"
+              href="/Service_Research_Compass_2030_User_Guide.pdf"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -360,7 +360,7 @@ const IntroPage = ({ onEnter }) => {
                   
                   <div style={{ fontSize: '13px', color: '#555', lineHeight: '1.7' }}>
                     <p style={{ marginBottom: '10px' }}>
-                      Displays concept pairs ranked by prediction score (0-100), showing links likely to emerge by 2027.
+                      Displays concept pairs ranked by prediction score (0-100), showing links likely to emerge by 2030.
                     </p>
                     
                     <div style={{ 
@@ -432,7 +432,7 @@ const IntroPage = ({ onEnter }) => {
                           Predicted Network
                         </strong>
                         <div style={{ fontSize: '12px' }}>
-                          Future predictions by 2027
+                          Future predictions by 2030
                           <br/>
                           <em>Filter:</em> Top N pairs (50-2000)
                         </div>
@@ -713,7 +713,7 @@ const IntroPage = ({ onEnter }) => {
               fontSize: '12px', 
               color: '#a0aec0' 
             }}>
-              © 2025 Service Research Compass 2027. All Rights Reserved.
+              © 2025 Service Research Compass 2030. All Rights Reserved.
             </div>
           </div>
         </div>

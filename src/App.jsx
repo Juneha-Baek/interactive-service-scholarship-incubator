@@ -606,8 +606,8 @@ const App = () => {
               <Tooltip 
                 text={`When you click the Data Selection button and switch between datasets, the system displays prediction results that were trained on that specific dataset. Each dataset has its own trained model, so switching datasets shows you different prediction outcomes based on different training data.
 
-              - FT50 Data: 5,892 Service research papers from Financial Times Top 50 journals and 799 papers from JSR
-              - Service Data: 11,170 papers from Top 8 Service Research journals`}
+              - FT50 Data: 5,725 Service research papers from Financial Times Top 50 journals and 811 papers from JSR
+              - Service Data: 4,976 papers from Top 8 Service Research journals`}
                 position="bottom"
               />
             </div>
@@ -656,7 +656,7 @@ const App = () => {
                 Top Predicted Concept Pairs
               </h2>
               <Tooltip 
-                text={`Concept pairs ranked by prediction score (likelihood of connection by 2027).
+                text={`Concept pairs ranked by prediction score (likelihood of connection by 2030).
 
               【Key Metrics】
               - Rank: Position based on Prediction Score

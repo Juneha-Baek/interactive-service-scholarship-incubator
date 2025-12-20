@@ -58,7 +58,7 @@ const App = () => {
   // Year filter states
   const [yearFilter, setYearFilter] = useState('all');
   const [customStartYear, setCustomStartYear] = useState(2000);
-  const [customEndYear, setCustomEndYear] = useState(2024);
+  const [customEndYear, setCustomEndYear] = useState(2025);
 
   useEffect(() => {
     const loadData = async () => {
@@ -134,11 +134,11 @@ const App = () => {
     
     let startYear, endYear;
     if (yearFilter === 'last5') {
-      startYear = 2020;
-      endYear = 2024;
+      startYear = 2021;
+      endYear = 2025;
     } else if (yearFilter === 'last10') {
-      startYear = 2015;
-      endYear = 2024;
+      startYear = 2016;
+      endYear = 2025;
     } else if (yearFilter === 'custom') {
       startYear = customStartYear;
       endYear = customEndYear;
@@ -907,7 +907,7 @@ const App = () => {
 
                 【Current Network】
                 Existing co-occurrences from published service research papers.
-                - Year Range: Filter by publication year (default: 2000-2024) for temporal analysis
+                - Year Range: Filter by publication year (default: 2000-2025) for temporal analysis
                 `}
                   position="bottom"
                 />
@@ -930,8 +930,8 @@ const App = () => {
                     }}
                   >
                     <option value="all">All Years</option>
-                    <option value="last5">Last 5 Years (2020-2024)</option>
-                    <option value="last10">Last 10 Years (2015-2024)</option>
+                    <option value="last5">Last 5 Years (2021-2025)</option>
+                    <option value="last10">Last 10 Years (2016-2025)</option>
                     <option value="custom">Custom Range</option>
                   </select>
                 )}
@@ -944,7 +944,7 @@ const App = () => {
                       value={customStartYear}
                       onChange={(e) => setCustomStartYear(Number(e.target.value))}
                       min="2000"
-                      max="2024"
+                      max="2025"
                       style={{
                         width: '70px',
                         padding: '8px 10px',
@@ -962,7 +962,7 @@ const App = () => {
                       value={customEndYear}
                       onChange={(e) => setCustomEndYear(Number(e.target.value))}
                       min="2000"
-                      max="2024"
+                      max="2025"
                       style={{
                         width: '70px',
                         padding: '8px 10px',

@@ -97,7 +97,7 @@ const IntroPage = ({ onEnter }) => {
         }}>
           {/* GitHub Link - Top Right */}
           <a
-            href="https://github.com/Juneha-Baek/service-research-compass"
+            href="https://github.com/Juneha-Baek/interactive-service-scholarship-incubator"
             target="_blank"
             rel="noopener noreferrer"
             className="github-link"
@@ -124,7 +124,7 @@ const IntroPage = ({ onEnter }) => {
               textAlign: 'left',
               animation: 'fadeInUp 0.6s ease-out'
             }}>
-              Service Research Compass 2030
+              Interactive Service Scholarship Incubator
             </h1>
             
             {/* Subtitle */}
@@ -713,7 +713,7 @@ const IntroPage = ({ onEnter }) => {
               fontSize: '12px', 
               color: '#a0aec0' 
             }}>
-              © 2025 Service Research Compass 2030. All Rights Reserved.
+              © 2025 Interactive Service Scholarship Incubator (ISSI). All Rights Reserved.
             </div>
           </div>
         </div>

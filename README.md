@@ -1,10 +1,10 @@
-# Service Research Compass 2030
+# Interactive Service Scholarship Incubator (ISSI)
 
 Interactive visualization platform for analyzing predicted concept relationships in service research networks through 2030.
 
-🔗 **Live Demo:** https://service-research-compass.vercel.app/
+🔗 **Live Demo:** https://interactive-service-scholarship-incubator.vercel.app/
 
-📄 **User Guide:** [Download PDF](./docs/Service_Research_Compass_2030_User_Guide.pdf)
+📄 **User Guide:** [Download PDF](./docs/ISSI_User_Guide.pdf)
 
 ---
 
@@ -13,6 +13,7 @@ Interactive visualization platform for analyzing predicted concept relationships
 This platform visualizes link prediction results from service research papers, predicting which concept pairs are likely to be connected by 2030. Using hierarchical concept extraction and network analysis, the system helps identify emerging research priorities and interdisciplinary opportunities.
 
 **Methodology:**
+
 1. Concept extraction from research papers
 2. Semantic embedding (allenai/specter)
 3. K-means clustering for community detection
@@ -29,8 +30,8 @@ This platform visualizes link prediction results from service research papers, p
 | **Community Network** | Interactive force-directed graph comparing predicted vs. current connections |
 | **Community Ranking** | Matrix analysis categorizing pairs as Accelerating/Stabilizing/Consolidating/Exploring |
 
-
 ## Project Structure
+
 ```
 src/
 ├── components/
@@ -56,7 +57,7 @@ src/
 
 ## Documentation
 
-- **User Guide (PDF):** [Download](./docs/Service_Research_Compass_2030_User_Guide.pdf)
+- **User Guide (PDF):** [Download](./docs/ISSI_User_Guide.pdf)
 - **In-app Tooltips:** Hover over ⓘ icons for detailed explanations
 
 ---
@@ -69,4 +70,4 @@ src/
 
 ## 📄 License
 
-© 2025 Service Research Compass 2027. All Rights Reserved.
+© 2025 Interactive Service Scholarship Incubator (ISSI). All Rights Reserved.
